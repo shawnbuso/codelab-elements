@@ -16,7 +16,7 @@ http_archive(
     name = "io_bazel_rules_closure",
     sha256 = "6c493fc2ebc7b05be63171e8d5d57ebe5a73e8b0c57a14f477147af3f4dba1c2",
     strip_prefix = "rules_closure-{v}".format(v=rules_closure_ver),
-    url = "https://github.com/bazelbuild/rules_closure/archive/{v}.zip".format(v=rules_closure_ver),
+    path = "/Users/sbusolits/go/src/github.com/googlecodelabs/rules_closure",
 )
 load("@io_bazel_rules_closure//closure:defs.bzl", "closure_repositories")
 closure_repositories()
