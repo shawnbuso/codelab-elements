@@ -1,6 +1,4 @@
 dist: trusty
-sudo: true
-language: javascript
 
 env:
   - BAZEL=0.19.1
