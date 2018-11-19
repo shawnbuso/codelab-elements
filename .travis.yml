@@ -1,0 +1,17 @@
+dist: trusty
+
+env:
+  - BAZEL=0.19.1
+
+before_install:
+  - |
+    wget -O install.sh "https://github.com/bazelbuild/bazel/releases/download/${BAZEL}/bazel-${BAZEL}-installer-linux-x86_64.sh"
+    chmod +x install.sh
+    ./install.sh --user
+    rm -f install.sh
+
+script:
+  - bash tools/ci-presubmit.sh
+
+notifications:
+  email: false

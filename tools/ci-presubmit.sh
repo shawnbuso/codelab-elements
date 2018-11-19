@@ -15,8 +15,6 @@
 
 set -ex
 
-use_bazel.sh 0.19.1
-
 # Make this repo's bazel workspace the current work dir.
 # Relative to this script location.
 cd $(dirname $0)/..
